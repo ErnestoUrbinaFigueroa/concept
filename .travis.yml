@@ -3,5 +3,6 @@ dist: trusty
 addons:
   firefox: "latest"
 script: 
-    sudo chmod 777 /home/travis/build/ErnestoUrbinaFigueroa/concept/Drivers/geckodriver
     mvn clean test -Dsuite="src/test/resources/testng.xml"
+before_install:
+  - chmod +x /home/travis/build/ErnestoUrbinaFigueroa/concept/Drivers/geckodriver
