@@ -1,5 +1,7 @@
 language: java
-dist: trusty
+dist: xenial
+services:
+  - xvfb
 addons:
   firefox: "latest"
 script: 
