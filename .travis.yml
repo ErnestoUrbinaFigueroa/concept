@@ -2,4 +2,4 @@ language: java
 dist: trusty
 addons:
   chrome: stable
-script: mnv clean test -Dsuite="src/test/resources/testng.xml"
+script: mnv clean test -Dsuite=".src/test/resources/testng.xml"
