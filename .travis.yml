@@ -1,5 +1,5 @@
 language: java
 dist: trusty
 addons:
-  chrome: stable
+  firefox: "latest"
 script: mvn clean test -Dsuite="src/test/resources/testng.xml"
