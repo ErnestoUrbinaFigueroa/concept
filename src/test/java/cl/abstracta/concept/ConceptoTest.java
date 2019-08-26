@@ -36,7 +36,7 @@ public class ConceptoTest {
 		// Selenium config
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("Empresa", "Abstracta");
-		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
