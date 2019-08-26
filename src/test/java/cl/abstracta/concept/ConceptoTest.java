@@ -37,7 +37,7 @@ public class ConceptoTest {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("Empresa", "Abstracta");
 		System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver");
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.navigate().to("http://www.google.cl/");
